@@ -11,66 +11,105 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-  
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .curve {
+      clip-path: circle(20px at center);
+    }
+  </style>
 
     <title>bus ticket</title>
 </head>
 
 <body>
-    <header class="px-[80px]">
+    <header class="px-[50px]">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>About</a>
+                            </li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li>
-                        <a>About</a>
-                      </li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-3xl font-bold">P-Ticket</a>
+                    <a class="btn btn-ghost text-3xl font-bold">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal text-base px-1">
-                    <li><a>Home</a></li>
-                      <li>
-                        <a>About</a>
-                      </li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal text-base px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end">
-                    <a
-                    class="py-2 px-3 font-medium rounded-lg border-solid border-2 text-lime-500 bg-lime-100 border-lime-400 flex items-center space-x-2 hover:bg-lime-200  focus:ring-2 focus:ring-lime-500"
-                    href="#"
-                  >
-                  <span>Bus</span>
-                  <img class="w-[20px]" src="images/bus-icon.png" alt="">
-                  </a>
+                    <a class="py-2 px-3 font-medium rounded-lg border-solid border-2 text-lime-500 bg-lime-100 border-lime-400 flex items-center space-x-2 hover:bg-lime-200  focus:ring-2 focus:ring-lime-500"
+                        href="#">
+                        <span>Bus</span>
+                        <img class="w-[20px]" src="images/bus-icon.png" alt="">
+                    </a>
                 </div>
-              </div>
+            </div>
         </nav>
     </header>
+    <!-- banner section  -->
+    <div class="px-[80px]">
+
+        <div class="bg-[url('./images/banner.png')] content-center  mt-2 bg-cover bg-center h-[550px] w-[1171px]">
+            <!-- Content inside the div (if any) -->
+            <div class="text-center align-middle text-white">
+                <h1 class="text-5xl leading-snug font-bold ">
+                    End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span> 
+                </h1>
+                <p class="mt-2">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+                <button class="bg-lime-500 mt-8 text-black font-bold px-3 rounded-md py-2">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="flex px-[30px] justify-around mt-[-69px] ml-4">
+            <div class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
+                <div>
+                    <img class="w-[64px] h-[64px]" src="images/people.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">500K+</h1>
+                    <h5>Registered users</h5>
+                </div>
+            </div>
+            <div class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
+                <div>
+                    <img class="w-[64px] h-[64px]" src="images/ticket-cupon.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">1.7 lacks</h1>
+                    <h5>Tickets sold</h5>
+                </div>
+            </div>
+            <div class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
+                <div>
+                    <img class="w-[64px] h-[64px]" src="images/stoppage.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">80K+</h1>
+                    <h5>Rental partners</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
