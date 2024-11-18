@@ -13,11 +13,11 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .curve {
-      clip-path: circle(20px at center);
-    }
-  </style>
+    <style>
+        .curve {
+            clip-path: circle(20px at center);
+        }
+    </style>
 
     <title>bus ticket</title>
 </head>
@@ -74,14 +74,17 @@
             <!-- Content inside the div (if any) -->
             <div class="text-center align-middle text-white">
                 <h1 class="text-5xl leading-snug font-bold ">
-                    End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span> 
+                    End-to-End Travel with <br> <span class="text-lime-500">P Paribahan</span>
                 </h1>
-                <p class="mt-2">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+                <p class="mt-2">Yes, you can run unit tests and view the results directly within the app. The
+                    <br>integrated testing features allow for a streamlined .
+                </p>
                 <button class="bg-lime-500 mt-8 text-black font-bold px-3 rounded-md py-2">Buy Tickets</button>
             </div>
         </div>
         <div class="flex px-[30px] justify-around mt-[-69px] ml-4">
-            <div class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
+            <div
+                class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
                 <div>
                     <img class="w-[64px] h-[64px]" src="images/people.png" alt="">
                 </div>
@@ -90,7 +93,8 @@
                     <h5>Registered users</h5>
                 </div>
             </div>
-            <div class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
+            <div
+                class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
                 <div>
                     <img class="w-[64px] h-[64px]" src="images/ticket-cupon.png" alt="">
                 </div>
@@ -99,7 +103,8 @@
                     <h5>Tickets sold</h5>
                 </div>
             </div>
-            <div class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
+            <div
+                class="w-[308px] h-[138px] gap-4 bg-white flex items-center justify-center rounded-2xl border-b-4 border-lime-600">
                 <div>
                     <img class="w-[64px] h-[64px]" src="images/stoppage.png" alt="">
                 </div>
@@ -110,6 +115,78 @@
             </div>
         </div>
     </div>
+    <!-- Offer section  -->
+    <div class="mt-[120px]">
+        <h1 class="font-bold text-3xl text-center mb-9 mt-[50px]">Best offers for you</h1>
+        <div class="flex w-10/12 gap-6 mx-auto justify-center">
+            <div class="relative flex w-full h-[200px] bg-yellow-400 text-black rounded-xl shadow-md overflow-hidden">
+                <!-- Left Section -->
+                <div class="w-1/2 flex flex-col items-center justify-center  p-7">
+                    <h2 class="text-3xl font-bold">15% OFF</h2>
+                    <p class=" text-sm">on your next purchase</p>
+                    <p class="text-xs text-gray-800">use by January 2024</p>
+                </div>
+
+                <!-- Middle Divider with Curves -->
+                <div class="relative flex items-center justify-center w-[2px] bg-transparent">
+                    <!-- Dotted Line -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-[2px] h-full bg-transparent border-l-2 border-dashed border-white"></div>
+                    </div>
+
+                    <!-- Top Circle -->
+                    <div class="absolute top-[-20px] w-10 h-10 bg-white rounded-full border-2 border-white"></div>
+
+                    <!-- Bottom Circle -->
+                    <div class="absolute bottom-[-20px] w-10 h-10 bg-white rounded-full border-2 border-white"></div>
+                </div>
+
+
+                <!-- Right Section -->
+                <div class="w-1/2 p-4 flex flex-col items-center justify-center">
+                    <h2 class="text-3xl font-bold">NEW15</h2>
+                    <p class=" text-sm text-gray-700">Coupon Code</p>
+                </div>
+            </div>
+            <div class="relative flex w-full h-[200px] bg-[#F78C9C] text-black rounded-xl shadow-md overflow-hidden">
+                <!-- Left Section -->
+                <div class="w-1/2 flex flex-col items-center justify-center  p-7">
+                    <h2 class="text-3xl font-bold">20% OFF</h2>
+                    <p class=" text-sm">on your next purchase</p>
+                    <p class="text-xs text-gray-800">use by January 2024</p>
+                </div>
+
+                <!-- Middle Divider with Curves -->
+                <div class="relative flex items-center justify-center w-[2px] bg-transparent">
+                    <!-- Dotted Line -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-[2px] h-full bg-transparent border-l-2 border-dashed border-white"></div>
+                    </div>
+
+                    <!-- Top Circle -->
+                    <div class="absolute top-[-20px] w-10 h-10 bg-white rounded-full border-2 border-white"></div>
+
+                    <!-- Bottom Circle -->
+                    <div class="absolute bottom-[-20px] w-10 h-10 bg-white rounded-full border-2 border-white"></div>
+                </div>
+
+
+                <!-- Right Section -->
+                <div class="w-1/2 p-4 flex flex-col items-center justify-center">
+                    <h2 class="text-3xl font-bold">Couple 20</h2>
+                    <p class=" text-sm text-gray-700">Coupon Code</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex my-8 justify-center">
+            <button
+                class="py-2 px-3  font-semibold rounded-lg border-solid border-2 text-lime-500  border-lime-400 flex items-center space-x-2  focus:ring-2 focus:ring-lime-500"
+                href="#">
+                See All Offers
+            </button>
+        </div>
+    </div>
+
 </body>
 
 </html>
